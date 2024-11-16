@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    background-color: #1e1e2e; /* Mocha base */
+    font-family: 'Comic Sans MS', sans-serif; /* Comic Sans */
+    color: #cdd6f4; /* Mocha text */
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    user-select: none;
+}
+
+#headingcontainer {
+    margin: 20px;
+}
+
+#heading {
+    background-color: #1e1e2e; /* Mocha base */
+    stroke: #89b4fa; /* Mocha blue */
+    stroke-width: 3.7;
+    font-size: 55px;
+    font-family: 'Comic Sans MS', sans-serif; /* Comic Sans */
+    animation-name: launch;
+    animation-duration: 8s;
+    animation-name: flashing;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flashing {
+    0%   {stroke-width: 3.7;}
+    20%  {stroke-width: 3.4;}
+    40%  {stroke-width: 3.1;}
+    60%  {stroke-width: 2.8;}
+    80%  {stroke-width: 3.1;}
+    100% {stroke-width: 3.4;}
+}
+
+.cursor {
+    cursor: crosshair;
+}
+
+button {
+    padding: 30px;
+    margin: 175px;
+    background-color: #89b4fa; /* Mocha blue */
+    color: #1e1e2e; /* Mocha base */
+    border-radius: 50%;
+    font-family: 'Comic Sans MS', sans-serif; /* Comic Sans */
+    font-size: 22pt;
+    cursor: crosshair;
+    font-variant: small-caps;
+    animation-name: buttonPulse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes buttonPulse {
+    0%   {background-color: #1e1e2e;}
+    30%  {background-color: #89b4fa;}
+    70%  {background-color: #89b4fa;}
+    100% {background-color: #1e1e2e;}
+}
+
+#screen {
+    background-color: #313244; /* Mocha surface2 */
+    border: 2px solid #89b4fa; /* Mocha blue */
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+footer {
+    margin-top: 10px;
+    font-family: 'Comic Sans MS', sans-serif; /* Comic Sans */
+    font-size: small;
+}
+
+.menuTitle {
+    font-family: 'Comic Sans MS', sans-serif; /* Comic Sans */
+    font-size: 100px;
+    stroke: #89b4fa; /* Mocha blue */
+    stroke-width: 3px;
+    font-variant: small-caps;
+}
+
+.menuChoice {
+    font-family: 'Comic Sans MS', sans-serif; /* Comic Sans */
+    font-size: 30px;
+    font-variant: small-caps;
+    fill: #1e1e2e; /* Mocha base */
+}
+
+.menuCircle {
+    stroke: #89b4fa; /* Mocha blue */
+    stroke-width: 3;
+    fill: #b4befe; /* Mocha lavender */
+}
+
+#textPath {
+    stroke: #89b4fa; /* Mocha blue */
+    stroke-width: 3px;
+    font-size: 70px;
+    font-family: 'Comic Sans MS', sans-serif; /* Comic Sans */
+    letter-spacing: 3px;
+}
+
+.howToHeading {
+    stroke: #89b4fa; /* Mocha blue */
+    fill: #b4befe; /* Mocha lavender */
+    stroke-width: 0.5px;
+    font-size: 25px;
+    font-family: 'Comic Sans MS', sans-serif; /* Comic Sans */
+    font-variant: small-caps;
+}
+
+.howToInfo {
+    stroke: #89b4fa; /* Mocha blue */
+    fill: #b4befe; /* Mocha lavender */
+    stroke-width: 0.5px;
+    font-size: 15px;
+    font-family: 'Comic Sans MS', sans-serif; /* Comic Sans */
+    font-variant: small-caps;
+}
