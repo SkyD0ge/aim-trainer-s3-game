@@ -140,7 +140,7 @@ if(mode == 2){
     mainMenuButton.setAttribute("cx", 600)
     mainMenuButton.setAttribute("cy", 500)
     mainMenuButton.setAttribute("r", 90)
-    mainMenuText.setAttribute("x", 545)
+    mainMenuText.setAttribute("x", 535)
     mainMenuText.setAttribute("y", 510)
     mainMenuText.appendChild(mainMenuTextNode)
     svg.appendChild(mainMenuButton)
