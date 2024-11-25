@@ -1,8 +1,8 @@
 body {
     margin: 0;
-    background-color: #b5e2dc; /* Mocha base */
-    font-family: 'Comic Sans MS', sans-serif; /* Comic Sans */
-    color: #cdd6f4; /* Mocha text */
+    background-color: #f1b55b; 
+    font-family: 'Comic Sans MS', sans-serif;
+    color: #cdd6f4;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -16,11 +16,11 @@ body {
 }
 
 #heading {
-    background-color: #1e1e2e; /* Mocha base */
-    stroke: #89b4fa; /* Mocha blue */
+    background-color: #1e1e2e;
+    stroke: #89b4fa;
     stroke-width: 3.7;
     font-size: 55px;
-    font-family: 'Comic Sans MS', sans-serif; /* Comic Sans */
+    font-family: 'Comic Sans MS', sans-serif;
     animation-name: launch;
     animation-duration: 8s;
     animation-name: flashing;
