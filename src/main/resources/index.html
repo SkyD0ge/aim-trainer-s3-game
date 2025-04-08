@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Aim TrainerX</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+	<svg id="headingcontainer" width="800" height="100" style="font-size:30pt">
+	   <text id="heading" x = "250" y = "80">Aim Trainer</text>
+	</svg>
+	<div class="game">
+		<p>
+	    	<button id="play">Play</button>
+		</p>
+	
+		<svg id="screen" width="1200" height="720" viewbox="0,0,1200,720">
+			<text x="340" y="200" class="menuTitle" id="selectMode">Select Mode</text>
+			
+			<circle cx="300" cy="435" r="90" class="menuCircle" id="tapShot"></circle>
+			<circle cx="600" cy="435" r="90" class="menuCircle" id="tracker"></circle>
+			<circle cx="900" cy="435" r="90" class="menuCircle" id="howToPlay"></circle>
+			<text x="240" y="445" class="menuChoice" id="tapShotText">Tap Shot</text>
+			<text x="550" y="445" class="menuChoice" id="trackerText">Tracker</text>
+			<text x="812" y="445" class="menuChoice" id="howToPlayText">How To Play</text>
+			<path id="howToPath" fill="none" stroke="none" d="M 400 200 Q 600 100 800 200"></path>
+			<path id="tapShotPath" fill="none" stroke="blue" d="M 550 200 Q 500 300 300 300 Q 200 300 200 400"></path>
+			<path id="trackerPath" fill="none" stroke="blue" d="M 650 200 Q 700 300 900 300 Q 1000 300 1000 400"></path>
+			<text id="textPathElement">
+				<textPath href="#howToPath" id="textPath">
+					How To Play
+				</textPath>
+			</text>
+			<text id="tapShotInfoHeading" x="150" y="425" class="howToHeading">Tap Shot</text>
+			<text id="tapShotInfo" x="50" y="475" class="howToInfo">Click the targets that appear on screen</text>
+			<text id="trackerInfoHeading" x="950" y="425" class="howToHeading">Tracker</text>
+			<text id="trackerInfo" x="840" y="475" class="howToInfo">Hover the moving target with the crosshair</text>
+		</svg>
+	</div>
+	<footer>
+		<p></p>
+	</footer>
+	
+</body>	
+
+</html>
