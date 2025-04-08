@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aimtrainer-deployment
+  labels:
+    app: aimtrainer
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: aimtrainer
+  template:
+    metadata:
+      labels:
+        app: aimtrainer
+    spec:
+      containers:
+        - name: aimtrainer
+          image: aakashsahani/aimtrainer:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: aimtrainer-ssvc
+spec:
+  selector:
+    app: aimtrainer
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: LoadBalancer
